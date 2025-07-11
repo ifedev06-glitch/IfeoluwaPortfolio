@@ -4,37 +4,37 @@ import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
-    title: "Project One",
+    title: "FLEXPAY-FRONTEND",
     image: "/Screenshot 2025-07-11 201119.png",
     description: "A fullstack Banking application using (Spring Boot and React).",
     githubLink: "https://github.com/ifedev06-glitch/FLEXPAYFRONTEND",
   },
   {
-    title: "Project Two",
+    title: "MY PORTFOLIO",
     image: "/Screenshot 2025-07-11 201247.png",
     description: "A beautiful portfolio site built with (ReactJs and TailwindCSS).",
     githubLink: "https://github.com/ifedev06-glitch/IfeoluwaPortfolio",
   },
   {
-    title: "Project Three",
+    title: "FLEXPAY-BACKEND",
     image: "/flexpayBackend.png",
     description: "A Bank app Backend written in JAVA(SpringBoot).",
     githubLink: "https://github.com/ifedev06-glitch/FLEXPAY-BACKEND",
   },
   {
-    title: "Project Four",
+    title: "PAYSTACK INTEGRATION",
     image: "/project4.png",
     description: "A SpringBoot payment integration project using Paystack API.",
     githubLink: "https://github.com/ifedev06-glitch/PaystackIntegration",
   },
   {
-    title: "Project Five",
+    title: "FLUTTERWAVE-INTEGRATION",
     image: "/project3.png",
     description: "A SpringBoot payment integration project using Flutterwave API.",
     githubLink: "https://github.com/ifedev06-glitch/FlutterWave-Integration",
   },
   {
-    title: "Project Six",
+    title: "PAYPAL-INTEGRATION",
     image: "/project3.png",
     description: "A SpringBoot payment integration project using PayPal API.",
     githubLink: "https://github.com/ifedev06-glitch/Paypal-Integration",

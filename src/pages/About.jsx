@@ -31,7 +31,7 @@ const About = () => {
           I hold a <span className="text-white font-semibold">Bachelor of Engineering in Mechanical Engineering</span> 
           from <span className="text-white font-semibold">Landmark University</span>, 
           a background that sharpens my analytical and structured approach to software development. Outside of tech,
-           I’m a <span className="text-white font-semibold">skilled bass guitarist</span> and an 
+           I’m a <span className="text-white font-semibold"> skilled Bass guitarist</span> and an 
            <span className="text-white font-semibold">entrepreneur</span>, actively managing multiple 
            side businesses that reflect my passion for innovation and leadership.
         </p>
