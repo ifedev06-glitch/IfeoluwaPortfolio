@@ -10,7 +10,9 @@ const Navbar = () => {
     <nav className="px-6 py-6 text-white relative z-50">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-wide">Logo</div>
+        <div className="text-2xl font-extrabold tracking-wide text-gray-100 ">
+        {'{IFE DEV}'}
+        </div>
 
         {/* Hamburger Icon (Mobile Only) */}
         <div className="lg:hidden">
@@ -20,25 +22,41 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <ul className="hidden lg:flex gap-10 text-lg mr-12">
-          <li>
-            <Link to="/" className="nav-link">Home</Link>
-          </li>
-          <li>
-            <Link to="/about" className="nav-link">About</Link>
-          </li>
-          <li>
-            <Link to="/projects" className="nav-link">Projects</Link>
-          </li>
-          <li>
-            <a href="#blogs" className="nav-link">Blogs</a>
-          </li>
-          <li>
-            <Link to="/contact" className="px-4 py-2 border border-white/40 rounded-2xl transition hover:bg-white hover:text-black">
-              Contact
-            </Link>
-          </li>
-        </ul>
+       <ul className="hidden lg:flex gap-10 text-lg mr-12">
+  <li>
+    <Link to="/" className="relative group pb-1 text-white">
+      Home
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full origin-left"></span>
+    </Link>
+  </li>
+  <li>
+    <Link to="/about" className="relative group pb-1 text-white">
+      About
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full origin-left"></span>
+    </Link>
+  </li>
+  <li>
+    <Link to="/projects" className="relative group pb-1 text-white">
+      Projects
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full origin-left"></span>
+    </Link>
+  </li>
+  <li>
+    <a href="#blogs" className="relative group pb-1 text-white">
+      Blogs
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full origin-left"></span>
+    </a>
+  </li>
+  <li>
+    <Link
+      to="/contact"
+      className="px-4 py-2 border border-white/40 rounded-2xl transition hover:bg-white hover:text-black"
+    >
+      Contact
+    </Link>
+  </li>
+</ul>
+
       </div>
 
       {/* Mobile Menu */}
