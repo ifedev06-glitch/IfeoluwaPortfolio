@@ -1,49 +1,72 @@
-import React from 'react';
-
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="px-6 py-8 text-white relative z-10">
+    <nav className="px-6 py-6 text-white relative z-50">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
         <div className="text-2xl font-extrabold tracking-wide">Logo</div>
 
-        {/* Nav links */}
-        <ul className="flex gap-10 text-lg mr-12">
+        {/* Hamburger Icon (Mobile Only) */}
+        <div className="lg:hidden">
+          <button onClick={toggleMenu} className="text-white text-3xl">
+            {isOpen ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
+
+        {/* Desktop Nav Links */}
+        <ul className="hidden lg:flex gap-10 text-lg mr-12">
           <li>
-            <Link to="/" className="text-white relative group pb-1">
-              Home
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full origin-right"></span>
+            <Link to="/" className="nav-link">Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className="nav-link">About</Link>
+          </li>
+          <li>
+            <Link to="/projects" className="nav-link">Projects</Link>
+          </li>
+          <li>
+            <a href="#blogs" className="nav-link">Blogs</a>
+          </li>
+          <li>
+            <Link to="/contact" className="px-4 py-2 border border-white/40 rounded-2xl transition hover:bg-white hover:text-black">
+              Contact
             </Link>
           </li>
-          <li>
-            <Link to="/about" className="text-white relative group pb-1">
-              About
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full origin-right"></span>
-            </Link>
-          </li>
-          <li>
-            <a href="#contact" className="text-white relative group pb-1">
-              Projects
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full origin-right"></span>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" className="text-white relative group pb-1">
-              Blogs
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-500 group-hover:w-full origin-right"></span>
-            </a>
-          </li>
-          <li>
-          <Link to="/contact"
-            className="text-white px-4 py-2 border border-white/40 rounded-2xl transition-all duration-300 hover:bg-white hover:text-black hover:border-white"
-          >
-            Contact
-          </Link>
-        </li>
         </ul>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <ul className="flex flex-col gap-5 text-lg mt-4 bg-black/20 backdrop-blur-md p-6  rounded-xl lg:hidden shadow-lg border border-white/10 animate-fadeUp duration-300">
+          <li>
+            <Link to="/" className="nav-link" onClick={toggleMenu}>Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className="nav-link" onClick={toggleMenu}>About</Link>
+          </li>
+          <li>
+            <Link to="/projects" className="nav-link" onClick={toggleMenu}>Projects</Link>
+          </li>
+          <li>
+            <a href="#blogs" className="nav-link" onClick={toggleMenu}>Blogs</a>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="px-4 py-2 border border-white/40 rounded-2xl transition hover:bg-white hover:text-black"
+              onClick={toggleMenu}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };

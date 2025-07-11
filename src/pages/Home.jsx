@@ -1,7 +1,7 @@
 const Home = () => {
   return (
-    <section className="flex-1 flex items-center justify-center px-1 pt-20">
-      <div className="text-white max-w-6xl text-left space-y-6">
+    <section className="flex-1 flex items-center justify-center pt-20 px-4 sm:px-8 md:px-12 lg:px-20">
+      <div className="text-white max-w-6xl text-left space-y-6 mx-auto">
         {/* Animated Heading */}
         <h1 className="animate-fadeUp delay-[0ms] duration-[2000ms] ease-out text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide leading-tight">
           MY NAME IS OLADIPO IFEOLUWA.

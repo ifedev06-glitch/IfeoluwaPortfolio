@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="flex-1 flex items-center justify-center px-6 py-16 relative z-10">
-      <div className="animate-fadeUp duration-[2500ms] ease-out text-white max-w-4xl space-y-6">
+    <section className="flex-1 flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-16 relative z-10">
+      <div className="animate-fadeUp duration-[2500ms] ease-out text-white max-w-4xl space-y-6 mx-auto text-white">
         <h2 className="text-3xl sm:text-4xl font-bold text-white border-b-2 border-blue-500 pb-2 w-fit">
           About Me
         </h2>
