@@ -21,7 +21,7 @@ const Home = () => {
 
           You can effortlessly navigate through different pages by clicking on the links at the top of the page.
           Thank you for visiting, and enjoy your experience! 😊
-        </p>
+        </p>   
       </div>
     </section>
   );

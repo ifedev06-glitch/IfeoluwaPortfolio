@@ -30,8 +30,8 @@ const projects = [
   {
     title: "FLUTTERWAVE-INTEGRATION",
     image: "/project3.png",
-    description: "A SpringBoot payment integration project using Flutterwave API.",
-    githubLink: "https://github.com/ifedev06-glitch/FlutterWave-Integration",
+    description: "A SpringBoot payment integration project using Monnify API.",
+    githubLink: "https://github.com/ifedev06-glitch/Monnify-Integration",
   },
   {
     title: "PAYPAL-INTEGRATION",
@@ -39,6 +39,32 @@ const projects = [
     description: "A SpringBoot payment integration project using PayPal API.",
     githubLink: "https://github.com/ifedev06-glitch/Paypal-Integration",
   },
+
+{
+    title: "SHOP SECURE",
+    image: "/s1.png",
+    description: "An escrow-based platform for secure transactions between buyers and sellers.",
+    githubLink: "https://github.com/ifedev06-glitch/ShopSecure",
+  },
+  {
+    title: "Zentrader UI",
+    image: "/p1.png",
+    description: "An Ai trading robot dashboard (MVP version).",
+    githubLink: "https://github.com/ifedev06-glitch/zentrader",
+  },
+  {
+    title: "STX AUTOS",
+    image: "/stx.png",
+    description: "An autompbile website designed for a mechanic.",
+    githubLink: "https://github.com/ifedev06-glitch/BankAppDashboard",
+  },
+  {
+    title: "Bet App",
+    image: "/2x.png",
+    description: "A betting app built with Nextjs.",
+    githubLink: "https://github.com/ifedev06-glitch/EcommerceFrontend",
+  },
+
 ];
 
 const Projects = () => {
